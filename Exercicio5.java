@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Exercicio5 {
 
-    // 1. Conta quantas vezes o digito 7 aparece
+ 
     public static int contarSete(int numero) {
         if (numero == 0) {
             return 0;
@@ -17,7 +17,7 @@ public class Exercicio5 {
         return contarSete(numero / 10);
     }
 
-    // 2. Encontra o maior elemento do vetor
+
     public static int maiorVetor(int[] vetor, int posicao) {
         if (posicao == vetor.length - 1) {
             return vetor[posicao];
@@ -32,7 +32,7 @@ public class Exercicio5 {
         return maiorRestante;
     }
 
-    // 3. Verifica se uma palavra e palindromo
+
     public static boolean palindromo(
             String palavra, int inicio, int fim) {
 
@@ -47,7 +47,7 @@ public class Exercicio5 {
         return palindromo(palavra, inicio + 1, fim - 1);
     }
 
-    // 4. Soma de 1 ate n usando recursividade
+  
     public static int somaRecursiva(int n) {
         if (n <= 0) {
             return 0;
@@ -56,7 +56,7 @@ public class Exercicio5 {
         return n + somaRecursiva(n - 1);
     }
 
-    // Soma de 1 ate n usando um laco
+
     public static int somaLaco(int n) {
         int soma = 0;
 
